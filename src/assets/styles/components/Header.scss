@@ -1,0 +1,61 @@
+.Header {
+  width            : 100%;
+  position         : fixed;
+  padding          : 5px 80px;
+  top              : 0;
+  left             : 0;
+  z-index          : 1000;
+  background-color : $app-color;
+  display          : flex;
+  align-items      : center;
+  justify-content  : space-around;
+
+  .Center-block {
+    width           : 90%;
+    height          : 30px;
+    padding         : 20px 0;
+    font-weight     : 800;
+    font-size       : 18px;
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+
+    a {
+      cursor          : pointer;
+      color           : white;
+      text-decoration : none;
+
+      &:hover {
+        color : #5F5F5F;
+      }
+    }
+  }
+
+  .language-drop-down {
+    position    : relative;
+    cursor      : pointer;
+    font-weight : 800;
+    font-size   : 18px;
+    color       : white;
+
+    .drop-down {
+      min-width        : 40px;
+      position         : absolute;
+      top              : 40px;
+      left             : -10px;
+      background-color : $app-color;
+      border-radius    : 5px;
+      line-height      : 30px;
+      padding          : 5px 10px;
+    }
+
+    .drop-down span {
+      display     : block;
+      margin-left : 3px;
+    }
+
+    .drop-down-hide {
+      display : none;
+    }
+  }
+}
