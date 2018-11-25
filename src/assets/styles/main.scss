@@ -2,7 +2,7 @@
   margin      : 0;
   padding     : 0;
   box-sizing  : border-box;
-  font-family : 'Regular';
+  font-family : 'Regular', 'Armenian';
   outline     : 0;
 }
 
@@ -12,6 +12,14 @@
   font-weight : normal;
   font-style  : normal;
 }
+
+@font-face {
+  font-family : 'Armenian';
+  src         : url('../fonts/Armenian.TTF') format('truetype');
+  font-weight : normal;
+  font-style  : normal;
+}
+
 
 button {
   cursor: pointer;

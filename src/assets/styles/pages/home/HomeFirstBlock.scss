@@ -1,11 +1,17 @@
 .Home-First-Block {
   width            : 100%;
-  height           : 100vh;
+  height           : 65vh;
   padding          : 40px 5px;
   background-color : #EFEFEF;
 
+  h2 {
+    color     : $app-color;
+    font-size : 35px;
+    padding   : 0 13%;
+  }
+
   .Home-Info {
-    width           : 80%;
+    width           : 75%;
     height          : 300px;
     margin          : 20px auto;
     display         : flex;
@@ -14,13 +20,29 @@
 
     >div {
       width         : calc(35% - 25px);
-      height        : 180px;
+      height        : 230px;
       border-radius : 8px;
       padding       : 40px;
       box-shadow    : 0 1px 5px rgba(43, 132, 166, 0.8), 0 0 40px rgb(255, 255, 255) inset;
       transition    : all 0.5s ease;
       margin        : 10px;
       cursor        : pointer;
+    
+      .Home-Info-img-div,
+      .Home-Info-text {
+        display         : flex;
+        justify-content : center;
+        text-align      : center;
+      }
+
+     .Home-Info-img-div {
+        margin-bottom : 25px;
+
+        img {
+          width  : 130px;
+          height : 100px;
+        }
+     }
 
       &:hover {
         transform : scale(1.01);
